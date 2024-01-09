@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Accuity GPF Upload User Exits</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZACC_GPF_USER_EXITS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_BRAZIL</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload User Exit Template</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_BRAZIL2</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload User Exit Template</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_BRAZIL_LCD</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload User Exit Sample Brazilian Local Clearing Code</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_NO_SWIFT</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload User Exit Template</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_RU_ACCOUNT</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload User Exit Template</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_SWIFT_NO_X</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload Sample User Exit - strip XXX off Swift BIC</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_TEMPLATE</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload User Exit Template</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_ACC_GPF_USER_EXIT_US_TERRITO</FUNCNAME>
+     <SHORT_TEXT>Accuity GPF Upload User Exit Sample - US Territories</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <TYP>ZACC_EXIT_DATA_IN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BALLOGHNDL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZACC_EXIT_DATA_OUT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SKIP_BANK_ENTRY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Bank Data Read From File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOG_HANDLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application Log Handle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data that can be changed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SKIP_BANK_ENTRY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not import this bank entry</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
